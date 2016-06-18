@@ -1,0 +1,17 @@
+{
+    "name": "pld/atodolist",
+    "description": "An advanced todo list manager.",
+    "require": {
+        "keradus/psr4autoloader": "^2.0",
+        "monolog/monolog": "^1.19",
+        "twitter/bootstrap": "^3.3",
+        "slim/slim": "^3.4",
+        "components/jquery": "^3.0"
+    },
+    "authors": [
+        {
+            "name": "PLD",
+            "email": "sched@free.fr"
+        }
+    ]
+}
