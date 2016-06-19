@@ -7,7 +7,8 @@
         "twitter/bootstrap": "^3.3",
         "components/jquery": "^3.0",
         "slim/slim": "^3.4",
-        "slim/twig-view": "^2.1"
+        "slim/twig-view": "^2.1",
+        "doctrine/orm": "^2.5"
     },
     "authors": [
         {
