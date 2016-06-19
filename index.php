@@ -34,11 +34,9 @@ $container['view'] = function ($container) {
 
     return $view;
 };
-$app->get('/hello/{name}', function (Request $request, Response $response) {
-    $name = $request->getAttribute('name');
-    $response->getBody()->write("Hello, $name");
+$app->get('/hello/{name}', function (Request $request, Response $response, $args) {
     $this->logger->addInfo("Something interesting happened");
-    return $response;
-});
+    return $this->view->render($response, 'hello.html',['name'=>$args['name']]);
+})->setName('profile');
 $app->run();
 ?>
