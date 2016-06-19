@@ -23,6 +23,17 @@ $container['logger'] = function($c) {
     $logger->pushHandler($file_handler);
     return $logger;
 };
+$container['view'] = function ($container) {
+    $view = new \Slim\Views\Twig(__DIR__."/view", [
+        'cache' => false
+    ]);
+    $view->addExtension(new \Slim\Views\TwigExtension(
+        $container['router'],
+        $container['request']->getUri()
+    ));
+
+    return $view;
+};
 $app->get('/hello/{name}', function (Request $request, Response $response) {
     $name = $request->getAttribute('name');
     $response->getBody()->write("Hello, $name");
