@@ -9,6 +9,7 @@ class ComposerStaticInit68f717a294608bdfaf01d7b1bb8b8bf8
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -27,6 +28,12 @@ class ComposerStaticInit68f717a294608bdfaf01d7b1bb8b8bf8
         array (
             'Monolog\\' => 8,
         ),
+        'L' => 
+        array (
+            'League\\OAuth2\\Server\\' => 21,
+            'League\\Event\\' => 13,
+            'Lcobucci\\JWT\\' => 13,
+        ),
         'K' => 
         array (
             'Keradus\\' => 8,
@@ -44,6 +51,10 @@ class ComposerStaticInit68f717a294608bdfaf01d7b1bb8b8bf8
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\' => 16,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -72,6 +83,18 @@ class ComposerStaticInit68f717a294608bdfaf01d7b1bb8b8bf8
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'League\\OAuth2\\Server\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/oauth2-server/src',
+        ),
+        'League\\Event\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/event/src',
+        ),
+        'Lcobucci\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lcobucci/jwt/src',
+        ),
         'Keradus\\' => 
         array (
             0 => __DIR__ . '/..' . '/keradus/psr4autoloader/src',
@@ -95,6 +118,10 @@ class ComposerStaticInit68f717a294608bdfaf01d7b1bb8b8bf8
         'Doctrine\\Common\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
